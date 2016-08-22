@@ -6,7 +6,7 @@ This content is a synthesis of all that I learn about versioning with Git.
 
 ```shell
 # Define global user name
-git config --global user.name "Your user name"
+git config --global user.name "YourUserName"
 
 # Define global user email
 git config --global user.email "your@email.com"
@@ -15,10 +15,10 @@ git config --global user.email "your@email.com"
 # your-favorite-editor = shortcut for your favorite editor (atom in my case)
 git config --global core.editor your-favorite-editor
 
-# See all global configs
+# Show all global configs
 git config --list
 
-# See some specific config
+# Show some specific config
 git config user.name
 ```
 
@@ -34,7 +34,7 @@ cd project-name
 # Initialize Git repository
 git init
 
-# See Git hidden folder
+# Show Git hidden folder
 ls -la
 ```
 ## Git file status lifecycle
@@ -42,7 +42,7 @@ ls -la
 ![Image of a representation of Git file status lifecycle](https://github.com/EricDosReis/git-commands/blob/master/git-file-status-lifecycle.jpg)
 
 ```shell
-# See files status
+# Show files status
 git status
 ```
 
@@ -81,3 +81,28 @@ git commit -m "Write a message describing your changes"
 ```
 
 After the commit all the committed files return to the unmodified status.
+
+## Viewing logs
+
+```shell
+# Show the log
+git log
+
+# Show the log with more informations like branchs, merges, tags, etc ...
+git log --decorate
+
+# Show all log entries done by an especific author
+git log --author="AuthorName"
+
+# Show all authors with the amount of commits and each commit message
+git shortlog
+
+# Show only authors and the amount of commits of each
+git shortlog -sn
+
+# Show a graph with all repository changes
+git log --graph
+
+# Show all commit content
+git show c0mmit-h4sh
+```
