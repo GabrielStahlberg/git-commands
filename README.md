@@ -26,10 +26,10 @@ git config user.name
 
 ```shell
 # First create a folder for your project
-mkdir project-name
+mkdir <project>
 
 # Enter the project folder
-cd project-name
+cd <project>
 
 # Initialize Git repository
 git init
@@ -51,7 +51,7 @@ Files that are not being tracked by Git.
 
 ```shell
 # Add a file to the staging area
-git add file-name
+git add <file>
 
 # Add all files to the staging area
 git add -A
@@ -59,11 +59,6 @@ git add -A
 
 ### Unmodified status
 Files tracked by Git but not modified.
-
-```shell
-# Unstage a file
-git rm --cached file-name
-```
 
 ### Modified status
 Files tracked by Git and modified. All modified files must be added to the staging area again:
@@ -78,6 +73,9 @@ Files prepared to be committed.
 ```shell
 # Commit all staged changes
 git commit -m "Write a message describing your changes"
+
+# Add all files to staging area and commit
+git commit -am "Write a message describing your changes"
 ```
 
 After the commit all the committed files return to the unmodified status.
@@ -103,6 +101,36 @@ git shortlog -sn
 # Show a graph with all repository changes
 git log --graph
 
-# Show all commit content
-git show c0mmit-h4sh
+# Show content of an especified commit
+git show <hash>
+```
+
+## Viewing differences
+
+```shell
+# Show all modifications before commit
+git diff
+
+# Show names of modified files before commit
+git diff --name-only
+```
+
+## Undoing things
+
+```shell
+# Return a file to a previous state
+git checkout <file>
+
+# Unstage a file of staging area
+git reset HEAD <file>
+
+# Reset a commit
+# Back files to the staged status
+git reset --soft <penultimate-commit-hash>
+
+# Back files to the modified status
+git reset --mixed <penultimate-commit-hash>
+
+# Kill committed files
+git reset --hard <penultimate-commit-hash>
 ```
