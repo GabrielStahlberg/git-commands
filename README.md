@@ -95,7 +95,7 @@ git log --author="AuthorName"
 # Show all authors with the amount of commits and each commit message
 git shortlog
 
-# Show only authors and the amount of commits of each
+# Show only authors and the amount of commits from each
 git shortlog -sn
 
 # Show a graph with all repository changes
@@ -121,7 +121,7 @@ git diff --name-only
 # Return a file to a previous state
 git checkout <file>
 
-# Unstage a file of staging area
+# Unstage a file from staging area
 git reset HEAD <file>
 
 # Reset a commit
