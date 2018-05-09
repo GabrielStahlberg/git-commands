@@ -134,3 +134,22 @@ git reset --mixed <penultimate-commit-hash>
 # Kill committed files
 git reset --hard <penultimate-commit-hash>
 ```
+
+## Managing branches
+
+```shell
+# Create new local branch
+git branch <branch-name>
+
+# Push new local branch to remote
+git push -u origin <branch>
+
+# Changing current branch
+git checkout <branch-name>
+
+# Removing a remote branch
+git push origin --delete <remote-branch-name>
+
+# Syncronize local branch list
+git fetch -p 
+```
