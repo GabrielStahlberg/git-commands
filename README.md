@@ -139,16 +139,16 @@ git reset --hard <penultimate-commit-hash>
 
 ```shell
 # Create new local branch
-git branch <branch-name>
+git branch <branch>
 
 # Push new local branch to remote
 git push -u origin <branch>
 
 # Changing current branch
-git checkout <branch-name>
+git checkout <branch>
 
 # Removing a remote branch
-git push origin --delete <remote-branch-name>
+git push origin --delete <remote-branch>
 
 # Syncronize local branch list
 git fetch -p 
