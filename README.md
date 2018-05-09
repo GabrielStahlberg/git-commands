@@ -121,6 +121,9 @@ git diff --name-only
 # Return a file to a previous state
 git checkout <file>
 
+# Checkout in a commit
+git checkout <commit-hash>
+
 # Unstage a file from staging area
 git reset HEAD <file>
 
