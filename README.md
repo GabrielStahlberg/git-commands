@@ -164,4 +164,7 @@ git push origin --delete <remote-branch>
 
 # Syncronize local branch list
 git fetch -p 
+
+# Merge a branch with the current branch
+git merge <branch>
 ```
