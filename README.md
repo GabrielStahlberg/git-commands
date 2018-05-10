@@ -144,6 +144,9 @@ git reset --hard <penultimate-commit-hash>
 # Create new local branch
 git branch <branch>
 
+# Create new local branch and checkout
+git checkout -b <branch>
+
 # Push new local branch to remote
 git push -u origin <branch>
 
