@@ -121,10 +121,16 @@ git diff --name-only
 # Return a file to a previous state
 git checkout <file>
 
+# Reset files changes
+git checkout .
+
 # Checkout in a commit
 git checkout <commit-hash>
 
-# Unstage a file from staging area
+# Remove untracked files
+git clean -f -d
+
+# Untracked a file from staging area
 git reset HEAD <file>
 
 # Reset a commit
