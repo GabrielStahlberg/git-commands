@@ -130,7 +130,7 @@ git checkout <commit-hash>
 # Remove untracked files
 git clean -f -d
 
-# Untracked a file from staging area
+# Untrack a file from staging area
 git reset HEAD <file>
 
 # Reset a commit
@@ -156,13 +156,16 @@ git checkout -b <branch>
 # Push new local branch to remote
 git push -u origin <branch>
 
-# Changing current branch
+# Change current branch
 git checkout <branch>
 
-# Removing a remote branch
+# Remove a local branch
+git branch -d <local-branch>
+
+# Remove a remote branch
 git push origin --delete <remote-branch>
 
-# Syncronize local branch list
+# Sync local branch list
 git fetch -p 
 
 # Merge a branch with the current branch
