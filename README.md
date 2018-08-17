@@ -165,8 +165,8 @@ git branch -d <local-branch>
 # Remove a remote branch
 git push origin --delete <remote-branch>
 
-# Sync local branch list
-git fetch -p 
+# List remote branches
+git branch -r
 
 # Merge a branch with the current branch
 git merge <branch>
