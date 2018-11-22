@@ -1,8 +1,6 @@
-# Some importants commands for working with Git
+# Essential git commands every developer should know.
 
-This content is a synthesis of all that I learn about versioning with Git.
-
-## Initial user Git config
+## User config
 
 ```shell
 # Define global user name
@@ -22,7 +20,7 @@ git config --list
 git config user.name
 ```
 
-## Initialize a Git repository
+## Create a git repository
 
 ```shell
 # First create a folder for your project
@@ -37,7 +35,7 @@ git init
 # Show Git hidden folder
 ls -la
 ```
-## Git file status lifecycle
+## File status
 
 ![Image of a representation of Git file status lifecycle](https://github.com/EricDosReis/git-commands/blob/master/git-file-status-lifecycle.jpg)
 
@@ -105,7 +103,7 @@ git log --graph
 git show <hash>
 ```
 
-## Viewing differences
+## Viewing diffs
 
 ```shell
 # Show all modifications before commit
