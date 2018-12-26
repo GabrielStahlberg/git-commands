@@ -35,71 +35,49 @@ git remote set-url origin repository-url
 # Show remote repository url
 git remote -v
 ```
-## File status
+## File status lifecycle
 
 ![Image of a representation of Git file status lifecycle](https://github.com/EricDosReis/git-commands/blob/master/git-file-status-lifecycle.jpg)
 
 ```shell
 # Show files status
 git status
-```
 
-### Untracked status
-Files that are not being tracked by Git.
+# Add files to staging
+git add file-path
 
-```shell
-# Add a file to the staging area
-git add <file>
-
-# Add all files to the staging area
+# Add all files
 git add -A
-```
 
-### Unmodified status
-Files tracked by Git but not modified.
-
-### Modified status
-Files tracked by Git and modified. All modified files must be added to the staging area again:
-
-```shell
-git add -A
-```
-
-### Staged status
-Files prepared to be committed.
-
-```shell
-# Commit all staged changes
+# Commit all files
 git commit -m "Write a message describing your changes"
 
-# Add all files to staging area and commit
+# Add all files to staging and commit
 git commit -am "Write a message describing your changes"
 ```
-
-After the commit all the committed files return to the unmodified status.
 
 ## Viewing logs
 
 ```shell
-# Show the log
+# Show log
 git log
 
-# Show the log with more informations like branchs, merges, tags, etc ...
+# Show log with more info like branchs, merges, tags, etc ...
 git log --decorate
 
 # Show all log entries done by an especific author
 git log --author="AuthorName"
 
-# Show all authors with the amount of commits and each commit message
+# Show all authors with the quantity of commits and each commit message
 git shortlog
 
-# Show only authors and the amount of commits from each
+# Show only authors and the quantity of commits
 git shortlog -sn
 
-# Show a graph with all repository changes
+# Show graph with all repository changes
 git log --graph
 
-# Show content of an especified commit
+# Show content of a commit
 git show <hash>
 ```
 
