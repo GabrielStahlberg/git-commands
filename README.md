@@ -1,6 +1,6 @@
 # Essential git commands every developer should know.
 
-## User config
+## Config
 
 ```shell
 # Define global user name
@@ -20,20 +20,20 @@ git config --list
 git config user.name
 ```
 
-## Create a git repository
+## Repository
 
 ```shell
-# First create a folder for your project
-mkdir <project>
-
-# Enter the project folder
-cd <project>
-
-# Initialize Git repository
+# Initialize a local repository
 git init
 
-# Show Git hidden folder
-ls -la
+# Clone remote repository
+git clone repository-url
+
+# Set remote repository 
+git remote set-url origin repository-url
+
+# Show remote repository url
+git remote -v
 ```
 ## File status
 
